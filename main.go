@@ -30,7 +30,7 @@ func main() {
 	}
 
 	//preparing mux and server
-	conn := fmt.Sprint(host, ":", port)
+	conn := fmt.Sprint(":", port)
 	router := http.NewServeMux()
 	router.Handle("/", http.FileServer(http.Dir("./client")))
 	router.HandleFunc("/pair", pairHandler)
@@ -38,7 +38,7 @@ func main() {
 	router.HandleFunc("/all", getAllHandler)
 
 	//serving
-	log.Printf("serving on %v", conn)
+	log.Printf("serving on %s%v", host, conn)
 	log.Fatal(http.ListenAndServe(conn, router))
 }
 
