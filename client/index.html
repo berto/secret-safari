@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Safari</title>
+    <link href="./styles/materialize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="./styles/icons.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper center">
+        <a href="/"><h2> Secret Safari </h2></a>
+      </div>
+    </nav>
+    <div class="container row">
+      <div class="pair box row">
+        <div class="col card-box s12 m7 center-align">
+          <h2>Your Secret Safari is <span class="name"></span></h2>
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/lion.jpg">
+              <span class="card-title"></span>
+            </div>
+          </div>
+          <button class="waves-effect waves-light btn back">Back</button>
+        </div>
+      </div>
+      <div class="box form row">
+        <form class="col s12">
+          <div class="input-field col s12 m8">
+            <select class="name-select">
+              <option value="" disabled selected></option>
+              <option value="Hil">Hil</option>
+              <option value="Pete">Pete</option>
+              <option value="Tuck">Tuck</option>
+              <option value="Eli">Eli</option>
+              <option value="Liz">Liz</option>
+              <option value="Berto">Berto</option>
+            </select>
+            <label>Name</label>
+          </div>
+          <div class="col s12 m4 error">
+          </div>
+          <div class="input-field col s12">
+            <div class="animals">
+              <select class="animal-select">
+                <option disabled selected></option>
+                <option value="Lion">Lion</option>
+                <option value="Elephant">Elephant</option>
+                <option value="Buffalo">Buffalo</option>
+                <option value="Springbok">Springbok</option>
+                <option value="Giraffe">Giraffe</option>
+                <option value="Hippo">Hippo</option>
+                <option value="Hyena">Hyena</option>
+                <option value="Impala">Impala</option>
+                <option value="Warthog">Warthog</option>
+                <option value="Zebra">Zebra</option>
+              </select>
+              <label class="center-align">Spirit Animal</label>
+            </div>
+            <div class="carousel-box">
+              <label class="center-align">Spirit Animal</label>
+              <div class="carousel">
+                <a class="carousel-item" data-animal="lion" ><img src="assets/lion.jpg"></a>
+                <a class="carousel-item" data-animal="elephant" ><img src="assets/elephant.jpeg"></a>
+                <a class="carousel-item" data-animal="buffalo"><img src="assets/buffalo.jpg"></a>
+                <a class="carousel-item" data-animal="springbok" ><img src="assets/springbok.jpg"></a>
+                <a class="carousel-item" data-animal="giraffe" ><img src="assets/giraffe.jpeg"></a>
+                <a class="carousel-item" data-animal="hippo" ><img src="assets/hippo.jpg"></a>
+                <a class="carousel-item" data-animal="hyena" ><img src="assets/hyena.jpg"></a>
+                <a class="carousel-item" data-animal="impala" ><img src="assets/impala.jpg"></a>
+                <a class="carousel-item" data-animal="warthog" ><img src="assets/warthog.jpg"></a>
+                <a class="carousel-item" data-animal="zebra" ><img src="assets/zebra.jpg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 center-align">
+            <div class="preloader-wrapper small active">
+              <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="waves-effect waves-light btn">Select</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/materialize.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
