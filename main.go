@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/berto/secret-santa/db"
+	"github.com/berto/secret-safari/db"
 )
 
 type match struct {
